@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoradnikBezrobotnego.MVVM.Views.EmploymentAgencyView"
+             Title="EmploymentAgencyView"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid RowDefinitions=".2*,.35*,.35*,.1*"
+          ColumnDefinitions=".1*,.8*,.1*">
+        <Grid Grid.Row="0"
+              Grid.ColumnSpan="3"
+              BackgroundColor="Beige"
+              RowDefinitions=".8*,.2*"
+              Padding="10">
+            
+            <Image Source="urzad.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Urząd Pracy"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </Grid>
+        <Grid Grid.Row="1"
+              Grid.Column="1"
+              BackgroundColor="Beige"
+              RowDefinitions=".8*,.2*"
+              Padding="10">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Button_RegisterView"/>
+            </Grid.GestureRecognizers>
+            <Image Source="urzad.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label Grid.Row="1" Text="Rejestracja jako bezrobotny"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </Grid>
+        <Grid Grid.Row="2"
+              Grid.Column="1"
+              BackgroundColor="Beige"
+              RowDefinitions=".8*,.2*"
+              Padding="10">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Button_RegisterView"/>
+            </Grid.GestureRecognizers>
+            <Image Source="urzad.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label Grid.Row="1" Text="Kim jest bezrobotny?"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        
+
+    </Grid>
+    
+    
+
+
+</ContentPage>

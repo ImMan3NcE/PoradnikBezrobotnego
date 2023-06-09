@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoradnikBezrobotnego.MVVM.Views.MenuView"
+             Title="MenuView"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid ColumnDefinitions=".10*,.80*,.10*"
+          RowDefinitions=".10*,.29*,.29*,.29*,.03*"
+          VerticalOptions="Center">
+        <!--#region Title -->
+        <Label Grid.ColumnSpan="3"
+               BackgroundColor="Green"
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               Text="Poradnik Bezrobotnego"
+               TextColor="Wheat"
+               VerticalTextAlignment="Center"/>
+        <!--#endregion-->
+
+        <!--#region Options -->
+        <Grid Grid.Row="1"
+              Grid.Column="1"
+              BackgroundColor="Beige"
+              RowDefinitions=".8*,.2*"
+              Padding="10">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Button_EmploymentAgency"/>
+            </Grid.GestureRecognizers>
+            <Image Source="urzad.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Urząd Pracy"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </Grid>
+        <Grid Grid.Row="2"
+              Grid.Column="1"
+              BackgroundColor="Beige"
+              RowDefinitions=".8*,.2*"
+              Padding="10">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Button_EmploymentAgency"/>
+            </Grid.GestureRecognizers>
+            <Image Source="piszcv.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Jak napisac CV?"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="3"
+              Grid.Column="1"
+              BackgroundColor="Beige"
+              RowDefinitions=".8*,.2*"
+              Padding="10">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Button_EmploymentAgency"/>
+            </Grid.GestureRecognizers>
+            <Image Source="internet.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Gdzie szukać pracy w Internecie?"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+        </Grid>
+        
+        <!--#endregion-->
+
+
+
+
+    </Grid>
+    
+</ContentPage>

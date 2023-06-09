@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoradnikBezrobotnego.MVVM.Views.RegistrationView"
+             Title="RegistrationView">
+    <Grid RowDefinitions=".2*,.7*,.1*"
+          ColumnDefinitions=".1*,.4*,.4*,.1*">
+        <Grid Grid.Row="0"
+              Grid.Column="1"
+              BackgroundColor="Beige"
+              RowDefinitions=".8*,.2*"
+              Padding="10">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Button_OnlineRegistration"/>
+            </Grid.GestureRecognizers>
+            <Image Source="urzad.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Rejestracja Online"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </Grid>
+        <Grid Grid.Row="0"
+              Grid.Column="2"
+              BackgroundColor="Beige"
+              RowDefinitions=".8*,.2*"
+              Padding="10">
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="Button_OnsiteRegistration"/>
+            </Grid.GestureRecognizers>
+            <Image Source="urzad.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Rejestracja na miejscu w Urzędzie Pracy"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+
+        </Grid>
+
+        <ScrollView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="AliceBlue" Padding="0">
+            <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            x:Name="instrucionlbl"
+            HorizontalOptions="Center" 
+            TextType="Html"
+                Padding="10"/>
+        </ScrollView>
+
+        <Button Grid.Row="2"
+            Grid.Column="1"
+            Text="Poprzedni"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            IsVisible="false"
+            Clicked="Button_Clicked"
+            x:Name="btnPrevious"/>
+        <Button Grid.Row="2"
+            Grid.Column="2"
+            Text="Nastepny"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="Button_Clicked"
+            x:Name="btnNext"
+                IsVisible="false"/>
+
+    </Grid>
+</ContentPage>
