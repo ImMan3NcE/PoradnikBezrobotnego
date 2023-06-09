@@ -15,5 +15,10 @@ public partial class EmploymentAgencyView : ContentPage
         Navigation.PushAsync(new RegistrationView());
     }
 
+    private void Button_UnemployedView(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new UnemployedView());
+    }
+
 
 }

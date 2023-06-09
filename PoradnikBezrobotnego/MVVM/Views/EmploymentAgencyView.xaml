@@ -43,7 +43,7 @@
               RowDefinitions=".8*,.2*"
               Padding="10">
             <Grid.GestureRecognizers>
-                <TapGestureRecognizer Tapped="Button_RegisterView"/>
+                <TapGestureRecognizer Tapped="Button_UnemployedView"/>
             </Grid.GestureRecognizers>
             <Image Source="urzad.png"
                    HorizontalOptions="Center"
