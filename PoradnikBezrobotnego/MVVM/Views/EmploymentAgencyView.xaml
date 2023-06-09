@@ -13,7 +13,7 @@
               RowDefinitions=".8*,.2*"
               Padding="10">
             
-            <Image Source="urzad.png"
+            <Image Source="urzadz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label StyleClass="MenuLbl" Grid.Row="1" Text="Urząd Pracy"
@@ -29,7 +29,7 @@
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_RegisterView"/>
             </Grid.GestureRecognizers>
-            <Image Source="urzad.png"
+            <Image Source="rejjakobezr.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label Grid.Row="1" Text="Rejestracja jako bezrobotny"
@@ -45,7 +45,7 @@
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_UnemployedView"/>
             </Grid.GestureRecognizers>
-            <Image Source="urzad.png"
+            <Image Source="kimjestbezr.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label Grid.Row="1" Text="Kim jest bezrobotny?"

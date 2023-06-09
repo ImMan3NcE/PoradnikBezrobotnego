@@ -16,7 +16,7 @@
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_OnlineRegistration"/>
             </Grid.GestureRecognizers>
-            <Image Source="urzad.png"
+            <Image Source="rejonline.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label StyleClass="MenuLbl" Grid.Row="1" Text="Rejestracja Online"
@@ -32,7 +32,7 @@
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_OnsiteRegistration"/>
             </Grid.GestureRecognizers>
-            <Image Source="urzad.png"
+            <Image Source="rejnamiejscu.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label StyleClass="MenuLbl" Grid.Row="1" Text="Rejestracja na miejscu w Urzędzie Pracy"

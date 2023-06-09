@@ -7,7 +7,7 @@
     <ScrollView>
         <Grid RowDefinitions=".2*,.8*">
             <Grid RowDefinitions=".8*,.2*">
-                <Image Source="piszcv.png"
+                <Image Source="piszcvz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
                 <Label StyleClass="MenuLbl" Grid.Row="1" Text="Jak napisać CV?"

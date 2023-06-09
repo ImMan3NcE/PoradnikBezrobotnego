@@ -28,7 +28,7 @@
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_EmploymentAgency"/>
             </Grid.GestureRecognizers>
-            <Image Source="urzad.png"
+            <Image Source="urzadz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label StyleClass="MenuLbl" Grid.Row="1" Text="Urząd Pracy"
@@ -44,7 +44,7 @@
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_cvView"/>
             </Grid.GestureRecognizers>
-            <Image Source="piszcv.png"
+            <Image Source="piszcvz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label StyleClass="MenuLbl" Grid.Row="1" Text="Jak napisac CV?"
@@ -59,7 +59,7 @@
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_SearchJobView"/>
             </Grid.GestureRecognizers>
-            <Image Source="internet.png"
+            <Image Source="internetz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label StyleClass="MenuLbl" Grid.Row="1" Text="Gdzie szukać pracy w Internecie?"

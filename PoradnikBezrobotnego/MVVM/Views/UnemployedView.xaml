@@ -14,7 +14,7 @@
               RowDefinitions=".8*,.2*"
               Padding="10">
 
-            <Image Source="urzad.png"
+            <Image Source="kimjestbezr.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
             <Label StyleClass="MenuLbl" Grid.Row="1" Text="Kim jest bezrobotny?"

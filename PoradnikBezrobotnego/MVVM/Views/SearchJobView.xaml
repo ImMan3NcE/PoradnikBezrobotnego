@@ -7,7 +7,7 @@
     <ScrollView>
         <Grid RowDefinitions=".2*,.8*">
             <Grid RowDefinitions=".8*,.2*">
-                <Image Source="internet.png"
+                <Image Source="internetz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
                 <Label  Grid.Row="1" Text="Gdzie szukać pracy w Internecie?"
