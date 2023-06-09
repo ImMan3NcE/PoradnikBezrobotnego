@@ -57,7 +57,7 @@
               RowDefinitions=".8*,.2*"
               Padding="10">
             <Grid.GestureRecognizers>
-                <TapGestureRecognizer Tapped="Button_EmploymentAgency"/>
+                <TapGestureRecognizer Tapped="Button_SearchJobView"/>
             </Grid.GestureRecognizers>
             <Image Source="internet.png"
                    HorizontalOptions="Center"

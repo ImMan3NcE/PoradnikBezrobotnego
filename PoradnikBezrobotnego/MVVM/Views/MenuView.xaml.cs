@@ -17,4 +17,9 @@ public partial class MenuView : ContentPage
     {
         Navigation.PushAsync(new cvView());
     }
+
+    private void Button_SearchJobView(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new SearchJobView());
+    }
 }

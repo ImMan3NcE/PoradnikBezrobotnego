@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoradnikBezrobotnego.MVVM.Views.SearchJobView"
+             Title="SearchJobView"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <Grid RowDefinitions=".2*,.8*">
+            <Grid RowDefinitions=".8*,.2*">
+                <Image Source="internet.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+                <Label  Grid.Row="1" Text="Gdzie szukać pracy w Internecie?"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+            </Grid>
+
+            <VerticalStackLayout Grid.Row="1" Padding="0,0,0,5">
+                <Label 
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"
+                        x:Name="jobStartlbl"/>
+
+                <Label 
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"
+                        x:Name="jobMidlbl"/>
+                <Label 
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"
+                        x:Name="jobEndlbl"/>
+
+                
+
+                
+
+                <Label 
+                        Text=""
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"/>
+
+            </VerticalStackLayout>
+
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

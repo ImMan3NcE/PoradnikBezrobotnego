@@ -1,26 +1,23 @@
-
-
 using Mopups.Services;
-using System.Windows.Input;
 
 namespace PoradnikBezrobotnego.MVVM.Views;
 
-public partial class cvView : ContentPage
+public partial class SearchJobView : ContentPage
 {
-    
 
     List<string> instruction = new List<string>();
-    public cvView()
+
+
+    public SearchJobView()
 	{
 		InitializeComponent();
-        
 	}
 
     protected override async void OnAppearing()
     {
         base.OnAppearing();
         await LoadMauiAsset();
-        CVInformations();
+        cvInformations();
 
     }
 
@@ -37,16 +34,14 @@ public partial class cvView : ContentPage
 
     }
 
-    public void CVInformations()
-	{
-        cvStartTip.Text = instruction[29];
-        cvMidTip.Text = instruction[30];
-        cvEndTip.Text = instruction[31];
-        cvCreatorslbl.Text = instruction[32];
+    public void cvInformations()
+    {
+        jobStartlbl.Text = instruction[35];
+        jobMidlbl.Text = instruction[36];
+        jobEndlbl.Text = instruction[37];
+        
     }
 
-    private void btnExCVPopUp_Clicked(object sender, EventArgs e)
-    {
-        MopupService.Instance.PushAsync(new CVPopupView());
-    }
+    
+
 }
