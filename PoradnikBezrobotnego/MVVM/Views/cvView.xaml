@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PoradnikBezrobotnego.MVVM.Views.cvView"
+             Title="cvView"
+             NavigationPage.HasNavigationBar="False">
+    <ScrollView>
+        <Grid RowDefinitions=".2*,.8*">
+            <Grid RowDefinitions=".8*,.2*">
+                <Image Source="piszcv.png"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+                <Label StyleClass="MenuLbl" Grid.Row="1" Text="Jak napisać CV?"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"/>
+            </Grid>
+
+            <VerticalStackLayout Grid.Row="1" Padding="0,0,0,5">
+                <Label 
+            Text="dsdfsdfsdf"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            TextType="Html"
+             Padding="10"
+             x:Name="cvStartTip"/>
+
+                <Label 
+            Text="dsdfsdfsdf"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            TextType="Html"
+             Padding="10"
+             x:Name="cvMidTip"/>
+                <Label 
+            Text="dsdfsdfsdf"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" 
+            TextType="Html"
+             Padding="10"
+             x:Name="cvEndTip"/>
+
+            <Button Grid.Row="2"
+            Grid.Column="2"
+            Text="Przykładowe CV"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            Clicked="btnExCVPopUp_Clicked"
+            x:Name="btnExCVPopUp"/>
+
+            </VerticalStackLayout>
+
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

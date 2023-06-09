@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PoradnikBezrobotnego.MVVM.Views.UnemployedView"
-             Title="UnemployedView">
+             Title="UnemployedView"
+             NavigationPage.HasNavigationBar="False">
     
     
     <Grid RowDefinitions=".2*,.7*,.1*"
@@ -16,7 +17,7 @@
             <Image Source="urzad.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Urząd Pracy"
+            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Kim jest bezrobotny?"
                    HorizontalTextAlignment="Center"
                    VerticalTextAlignment="Center"/>
 

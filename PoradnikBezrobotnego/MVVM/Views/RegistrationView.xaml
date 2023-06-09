@@ -2,9 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PoradnikBezrobotnego.MVVM.Views.RegistrationView"
-             Title="RegistrationView">
+             Title="RegistrationView"
+             NavigationPage.HasNavigationBar="False">
     <Grid RowDefinitions=".2*,.7*,.1*"
           ColumnDefinitions=".1*,.4*,.4*,.1*">
+
+        <!--#region 1 wiersz -->
         <Grid Grid.Row="0"
               Grid.Column="1"
               BackgroundColor="Beige"
@@ -37,6 +40,8 @@
                    VerticalTextAlignment="Center"/>
 
         </Grid>
+        <!--#endregion-->
+        
 
         <ScrollView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="AliceBlue" Padding="0">
             <Label 

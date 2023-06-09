@@ -58,21 +58,6 @@ public partial class RegistrationView : ContentPage
 
             instrucionlbl.Text = instruction[counter];
 
-
-
-
-            //switch (counter)
-            //{
-            //    case 0 when counter == 0:
-            //        instrucionlbl.Text = instruction[0];
-            //        break;
-            //    case 1 when counter == 1:
-            //        instrucionlbl.Text = instruction[1];
-            //        break;
-            //    case 2 when counter == 2:
-            //        instrucionlbl.Text = instruction[2];
-            //        break;
-            //}
         }
         // rejestracja w urzêdzie pracy na miejscu
         else if (option == 2)
