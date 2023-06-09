@@ -1,11 +1,19 @@
+
+
+using Mopups.Services;
+using System.Windows.Input;
+
 namespace PoradnikBezrobotnego.MVVM.Views;
 
 public partial class cvView : ContentPage
 {
+    
+
     List<string> instruction = new List<string>();
     public cvView()
 	{
 		InitializeComponent();
+        BindingContext = this;
 	}
 
     protected override async void OnAppearing()
@@ -34,10 +42,11 @@ public partial class cvView : ContentPage
         cvStartTip.Text = instruction[29];
         cvMidTip.Text = instruction[30];
         cvEndTip.Text = instruction[31];
+        cvCreatorslbl.Text = instruction[32];
     }
 
     private void btnExCVPopUp_Clicked(object sender, EventArgs e)
     {
-
+        MopupService.Instance.PushAsync(new CVPopupView());
     }
 }

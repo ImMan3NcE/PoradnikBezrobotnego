@@ -17,35 +17,51 @@
 
             <VerticalStackLayout Grid.Row="1" Padding="0,0,0,5">
                 <Label 
-            Text="dsdfsdfsdf"
-            VerticalOptions="Start" 
-            HorizontalOptions="Center" 
-            TextType="Html"
-             Padding="10"
-             x:Name="cvStartTip"/>
+                        Text="dsdfsdfsdf"
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"
+                        x:Name="cvStartTip"/>
 
                 <Label 
-            Text="dsdfsdfsdf"
-            VerticalOptions="Start" 
-            HorizontalOptions="Center" 
-            TextType="Html"
-             Padding="10"
-             x:Name="cvMidTip"/>
+                        Text="dsdfsdfsdf"
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"
+                        x:Name="cvMidTip"/>
                 <Label 
-            Text="dsdfsdfsdf"
-            VerticalOptions="Start" 
-            HorizontalOptions="Center" 
-            TextType="Html"
-             Padding="10"
-             x:Name="cvEndTip"/>
+                        Text="dsdfsdfsdf"
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"
+                        x:Name="cvEndTip"/>
 
-            <Button Grid.Row="2"
-            Grid.Column="2"
-            Text="Przykładowe CV"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-            Clicked="btnExCVPopUp_Clicked"
-            x:Name="btnExCVPopUp"/>
+                <Button Grid.Row="2"
+                        Grid.Column="2"
+                        Text="Przykładowe CV"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Clicked="btnExCVPopUp_Clicked"
+                        x:Name="btnExCVPopUp"
+                        Padding="10"/>
+
+                <Label 
+                        Text=""
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"
+                        x:Name="cvCreatorslbl"/>
+
+                <Label 
+                        Text=""
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Center" 
+                        TextType="Html"
+                        Padding="10"/>
 
             </VerticalStackLayout>
 
