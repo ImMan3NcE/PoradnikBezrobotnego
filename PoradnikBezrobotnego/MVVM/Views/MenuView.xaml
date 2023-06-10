@@ -9,14 +9,26 @@
           RowDefinitions=".10*,.29*,.29*,.29*,.03*"
           BackgroundColor="Beige">
         <!--#region Title -->
-        <Label Grid.ColumnSpan="3"
+        <Grid Grid.ColumnSpan="3" RowDefinitions="*,*" BackgroundColor="Wheat">
+            <Label StyleClass="Menulbl" 
+                   Grid.Row="0" 
+                   Text="PORADNIK"
+                   FontFamily="PlayfairExB"
+                   FontSize="20"/>
+            <Label StyleClass="Menulbl" 
+                   Grid.Row="1" 
+                   Text=" -BEZROBOTNEGO -"
+                   FontSize="20"/>
+            
+        </Grid>
+        <!--<Label Grid.ColumnSpan="3"
                BackgroundColor="DarkGreen"
                FontAttributes="Bold"
                FontSize="Large"
                HorizontalTextAlignment="Center"
                Text="Poradnik Bezrobotnego"
                TextColor="Wheat"
-               VerticalTextAlignment="Center"/>
+               VerticalTextAlignment="Center"/>-->
         <!--#endregion-->
 
         <!--#region Options -->

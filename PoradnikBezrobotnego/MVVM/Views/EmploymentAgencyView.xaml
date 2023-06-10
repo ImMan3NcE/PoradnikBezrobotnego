@@ -12,7 +12,7 @@
               Grid.ColumnSpan="3"
               BackgroundColor="Wheat"
               RowDefinitions=".8*,.2*"
-              Padding="10">
+              Padding="5">
             
             <Image Source="urzadz.png"
                    HorizontalOptions="Center"
