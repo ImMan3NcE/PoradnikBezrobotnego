@@ -5,45 +5,35 @@
              Title="SearchJobView"
              NavigationPage.HasNavigationBar="False">
     <ScrollView>
-        <Grid RowDefinitions=".2*,.8*">
-            <Grid RowDefinitions=".8*,.2*">
+        <Grid RowDefinitions=".2*,.8*" BackgroundColor="Beige">
+            <Grid RowDefinitions=".8*,.2*" BackgroundColor="Wheat">
                 <Image Source="internetz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-                <Label  Grid.Row="1" Text="Gdzie szukać pracy w Internecie?"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+                <Label  
+                    Grid.Row="1" 
+                    Text="Gdzie szukać pracy w Internecie?"
+                    StyleClass="Menulbl"/>
             </Grid>
 
             <VerticalStackLayout Grid.Row="1" Padding="0,0,0,5">
                 <Label 
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
-                        TextType="Html"
-                        Padding="10"
-                        x:Name="jobStartlbl"/>
+                    StyleClass="DataLabels"
+                    TextType="Html"
+                    x:Name="jobStartlbl"/>
 
                 <Label 
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
-                        TextType="Html"
-                        Padding="10"
-                        x:Name="jobMidlbl"/>
+                    StyleClass="DataLabels"
+                    TextType="Html"
+                    x:Name="jobMidlbl"/>
                 <Label 
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
-                        TextType="Html"
-                        Padding="10"
-                        x:Name="jobEndlbl"/>
+                    StyleClass="DataLabels"
+                    TextType="Html"
+                    x:Name="jobEndlbl"/>
 
-                
-
-                
 
                 <Label 
-                        Text=""
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
+                        StyleClass="Menulbl"
                         TextType="Html"
                         Padding="10"/>
 

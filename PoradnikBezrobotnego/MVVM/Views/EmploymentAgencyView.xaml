@@ -6,24 +6,24 @@
              NavigationPage.HasNavigationBar="False">
 
     <Grid RowDefinitions=".2*,.35*,.35*,.1*"
-          ColumnDefinitions=".1*,.8*,.1*">
+          ColumnDefinitions=".1*,.8*,.1*"
+          BackgroundColor="Beige">
         <Grid Grid.Row="0"
               Grid.ColumnSpan="3"
-              BackgroundColor="Beige"
+              BackgroundColor="Wheat"
               RowDefinitions=".8*,.2*"
               Padding="10">
             
             <Image Source="urzadz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Urząd Pracy"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <Label StyleClass="Menulbl" 
+                   Grid.Row="1" 
+                   Text="Urząd Pracy"/>
 
         </Grid>
         <Grid Grid.Row="1"
               Grid.Column="1"
-              BackgroundColor="Beige"
               RowDefinitions=".8*,.2*"
               Padding="10">
             <Grid.GestureRecognizers>
@@ -32,9 +32,9 @@
             <Image Source="rejjakobezr.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label Grid.Row="1" Text="Rejestracja jako bezrobotny"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <Label Grid.Row="1" 
+                   Text="Rejestracja jako bezrobotny"
+                   StyleClass="Menulbl" />
 
         </Grid>
         <Grid Grid.Row="2"
@@ -48,9 +48,9 @@
             <Image Source="kimjestbezr.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label Grid.Row="1" Text="Kim jest bezrobotny?"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <Label Grid.Row="1" 
+                   Text="Kim jest bezrobotny?"
+                   StyleClass="Menulbl"/>
 
         </Grid>
 

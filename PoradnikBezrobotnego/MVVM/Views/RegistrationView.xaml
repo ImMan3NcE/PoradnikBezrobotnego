@@ -5,67 +5,62 @@
              Title="RegistrationView"
              NavigationPage.HasNavigationBar="False">
     <Grid RowDefinitions=".2*,.7*,.1*"
-          ColumnDefinitions=".1*,.4*,.4*,.1*">
+          ColumnDefinitions=".1*,.4*,.4*,.1*" 
+          BackgroundColor="Beige">
 
         <!--#region 1 wiersz -->
         <Grid Grid.Row="0"
               Grid.Column="1"
-              BackgroundColor="Beige"
               RowDefinitions=".8*,.2*"
-              Padding="10">
+              x:Name="gridRegOnl">
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_OnlineRegistration"/>
             </Grid.GestureRecognizers>
             <Image Source="rejonline.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Rejestracja Online"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <Label StyleClass="Menulbl" 
+                   Grid.Row="1" 
+                   Text="Rejestracja Online"/>
 
         </Grid>
         <Grid Grid.Row="0"
               Grid.Column="2"
-              BackgroundColor="Beige"
               RowDefinitions=".8*,.2*"
-              Padding="10">
+              HorizontalOptions="Center"
+              x:Name="gridReg">
             <Grid.GestureRecognizers>
                 <TapGestureRecognizer Tapped="Button_OnsiteRegistration"/>
             </Grid.GestureRecognizers>
             <Image Source="rejnamiejscu.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Rejestracja na miejscu w Urzędzie Pracy"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <Label StyleClass="Menulbl" 
+                   Grid.Row="1" 
+                   Text="Rejestracja w urzędzie"/>
 
         </Grid>
         <!--#endregion-->
         
 
-        <ScrollView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="AliceBlue" Padding="0">
-            <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            x:Name="instrucionlbl"
-            HorizontalOptions="Center" 
-            TextType="Html"
-                Padding="10"/>
+        <ScrollView Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" BackgroundColor="White">
+            <Label StyleClass="DataLabels"
+                    x:Name="instrucionlbl"/>
         </ScrollView>
 
-        <Button Grid.Row="2"
+        <Button 
+            StyleClass="NavBtn"
+            Grid.Row="2"
             Grid.Column="1"
             Text="Poprzedni"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
             IsVisible="false"
             Clicked="Button_Clicked"
             x:Name="btnPrevious"/>
-        <Button Grid.Row="2"
+        <Button 
+            StyleClass="NavBtn"
+            Grid.Row="2"
             Grid.Column="2"
             Text="Nastepny"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
             Clicked="Button_Clicked"
             x:Name="btnNext"
                 IsVisible="false"/>

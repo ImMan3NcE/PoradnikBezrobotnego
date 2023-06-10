@@ -15,7 +15,7 @@ public static class MauiProgram
 			{
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-				fonts.AddFont("PoiretOne-Regular.ttf", "PoiretOne");
+				fonts.AddFont("NotoSerif_Condensed-BoldItalic.ttf", "NotoSerif");
 			});
 
 #if DEBUG

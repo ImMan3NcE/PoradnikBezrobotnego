@@ -40,6 +40,8 @@ public partial class RegistrationView : ContentPage
         btnPrevious.IsVisible = false;
         btnNext.IsVisible = true;
         stepInstr = 0;
+        gridRegOnl.BackgroundColor = Colors.Wheat;
+        gridReg.BackgroundColor = Colors.Beige;
     }
     private void Button_OnsiteRegistration(object sender, TappedEventArgs e)
     {
@@ -48,6 +50,8 @@ public partial class RegistrationView : ContentPage
         btnPrevious.IsVisible = false;
         btnNext.IsVisible = true;
         stepInstr = 19;
+        gridRegOnl.BackgroundColor = Colors.Beige;
+        gridReg.BackgroundColor = Colors.Wheat;
     }
 
     public void StepOfInstr(int counter)

@@ -29,11 +29,9 @@
             Padding="10"
             IsVisible="false"/>
             <Button
-            Grid.Column="1"
-            Text="zamknij"
-            VerticalOptions="Center"
-            HorizontalOptions="Center"
-                    Padding="10"
+                StyleClass="NavBtn"
+                Grid.Column="1"
+                Text="zamknij"
                 Clicked="ButtonClose_Clicked"/>
         </Grid>
 

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Color x:Key="DarkBlue">#212B4F</Color>
+    <Color x:Key="LightBlue">#8A8BA6</Color>
+    <Color x:Key="TxtLabelColor">#4d2a2c</Color>
+    
+    <!--#region labels -->
+
+    <Style Class="DataLabels" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TxtLabelColor}"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="FontFamily" Value="NotoSerif"/>
+        <Setter Property="TextType" Value="Html"/>
+        <Setter Property="Padding" Value="10"/>
+    </Style>
+
+    <Style Class="Menulbl" TargetType="Label">
+        <Setter Property="TextColor" Value="{StaticResource TxtLabelColor}"/>
+        <Setter Property="HorizontalTextAlignment" Value="Center"/>
+        <Setter Property="VerticalTextAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="NotoSerif"/>
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="Padding" Value="3"/>
+    </Style>
+
+
+    <!--#endregion-->
+
+
+    <Style Class="NavBtn"  TargetType="Button">
+        <Setter Property="FontAttributes" Value="Bold"/>
+        <Setter Property="TextColor" Value="{StaticResource TxtLabelColor}"/>
+        <Setter Property="VerticalOptions" Value="Center"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="BackgroundColor" Value="#47ec0d"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="FontFamily" Value="NotoSerif"/>
+        <Setter Property="BorderColor" Value="Black"/>
+        <Setter Property="BorderWidth" Value="3"/>
+    </Style>
+
+
+
+</ResourceDictionary>

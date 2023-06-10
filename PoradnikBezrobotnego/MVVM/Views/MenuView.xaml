@@ -7,10 +7,10 @@
 
     <Grid ColumnDefinitions=".10*,.80*,.10*"
           RowDefinitions=".10*,.29*,.29*,.29*,.03*"
-          VerticalOptions="Center">
+          BackgroundColor="Beige">
         <!--#region Title -->
         <Label Grid.ColumnSpan="3"
-               BackgroundColor="Green"
+               BackgroundColor="DarkGreen"
                FontAttributes="Bold"
                FontSize="Large"
                HorizontalTextAlignment="Center"
@@ -22,7 +22,6 @@
         <!--#region Options -->
         <Grid Grid.Row="1"
               Grid.Column="1"
-              BackgroundColor="Beige"
               RowDefinitions=".8*,.2*"
               Padding="10">
             <Grid.GestureRecognizers>
@@ -31,14 +30,13 @@
             <Image Source="urzadz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Urząd Pracy"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <Label StyleClass="Menulbl" 
+                   Grid.Row="1" 
+                   Text="Urząd Pracy"/>
 
         </Grid>
         <Grid Grid.Row="2"
               Grid.Column="1"
-              BackgroundColor="Beige"
               RowDefinitions=".8*,.2*"
               Padding="10">
             <Grid.GestureRecognizers>
@@ -47,13 +45,12 @@
             <Image Source="piszcvz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Jak napisac CV?"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <Label StyleClass="Menulbl" 
+                   Grid.Row="1" 
+                   Text="Jak napisac CV?"/>
         </Grid>
         <Grid Grid.Row="3"
               Grid.Column="1"
-              BackgroundColor="Beige"
               RowDefinitions=".8*,.2*"
               Padding="10">
             <Grid.GestureRecognizers>
@@ -62,9 +59,9 @@
             <Image Source="internetz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-            <Label StyleClass="MenuLbl" Grid.Row="1" Text="Gdzie szukać pracy w Internecie?"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+            <Label StyleClass="Menulbl" 
+                   Grid.Row="1" 
+                   Text="Gdzie szukać pracy w Internecie?"/>
         </Grid>
         
         <!--#endregion-->

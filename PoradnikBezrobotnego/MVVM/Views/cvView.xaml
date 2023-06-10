@@ -4,64 +4,45 @@
              x:Class="PoradnikBezrobotnego.MVVM.Views.cvView"
              Title="cvView"
              NavigationPage.HasNavigationBar="False">
-    <ScrollView>
+    <ScrollView BackgroundColor="Beige">
         <Grid RowDefinitions=".2*,.8*">
             <Grid RowDefinitions=".8*,.2*">
                 <Image Source="piszcvz.png"
                    HorizontalOptions="Center"
                    VerticalOptions="Center"/>
-                <Label StyleClass="MenuLbl" Grid.Row="1" Text="Jak napisać CV?"
-                   HorizontalTextAlignment="Center"
-                   VerticalTextAlignment="Center"/>
+                <Label StyleClass="Menulbl" 
+                       Grid.Row="1" 
+                       Text="Jak napisać CV?"/>
             </Grid>
 
             <VerticalStackLayout Grid.Row="1" Padding="0,0,0,5">
                 <Label 
-                        Text="dsdfsdfsdf"
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
-                        TextType="Html"
-                        Padding="10"
-                        x:Name="cvStartTip"/>
+                    StyleClass="DataLabels"
+                    TextType="Html"
+                    x:Name="cvStartTip"/>
 
                 <Label 
-                        Text="dsdfsdfsdf"
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
-                        TextType="Html"
-                        Padding="10"
-                        x:Name="cvMidTip"/>
+                    StyleClass="DataLabels" 
+                    TextType="Html"
+                    x:Name="cvMidTip"/>
                 <Label 
-                        Text="dsdfsdfsdf"
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
-                        TextType="Html"
-                        Padding="10"
-                        x:Name="cvEndTip"/>
+                    StyleClass="DataLabels"
+                    TextType="Html"
+                    x:Name="cvEndTip"/>
 
                 <Button Grid.Row="2"
                         Grid.Column="2"
+                        StyleClass="NavBtn"
                         Text="Przykładowe CV"
-                        VerticalOptions="Center"
-                        HorizontalOptions="Center"
                         Clicked="btnExCVPopUp_Clicked"
-                        x:Name="btnExCVPopUp"
-                        Padding="10"/>
+                        x:Name="btnExCVPopUp"/>
 
                 <Label 
-                        Text=""
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
-                        TextType="Html"
-                        Padding="10"
-                        x:Name="cvCreatorslbl"/>
+                    StyleClass="DataLabels"
+                    TextType="Html"
+                    x:Name="cvCreatorslbl"/>
 
-                <Label 
-                        Text=""
-                        VerticalOptions="Start" 
-                        HorizontalOptions="Center" 
-                        TextType="Html"
-                        Padding="10"/>
+                
 
             </VerticalStackLayout>
 
