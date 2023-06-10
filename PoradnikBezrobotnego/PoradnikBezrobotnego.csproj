@@ -32,10 +32,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#f5deb3" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#f5deb3" BaseSize="128,128" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -52,16 +52,13 @@
 	  <None Remove="Resources\Fonts\NotoSerif_Condensed-BoldItalic.ttf" />
 	  <None Remove="Resources\Fonts\PlayfairDisplay-ExtraBold.ttf" />
 	  <None Remove="Resources\Images\cvexample2.png" />
-	  <None Remove="Resources\Images\internet.png" />
 	  <None Remove="Resources\Images\internetz.png" />
 	  <None Remove="Resources\Images\kimjestbezr.png" />
 	  <None Remove="Resources\Images\logo.png" />
-	  <None Remove="Resources\Images\piszCV.png" />
 	  <None Remove="Resources\Images\piszCVz.png" />
 	  <None Remove="Resources\Images\rejjakobezr.png" />
 	  <None Remove="Resources\Images\rejnamiejscu.png" />
 	  <None Remove="Resources\Images\rejonline.png" />
-	  <None Remove="Resources\Images\urzad.png" />
 	  <None Remove="Resources\Images\urzadz.png" />
 	  <None Remove="Resources\Raw\instrukcjarejestracji.txt" />
 	</ItemGroup>
